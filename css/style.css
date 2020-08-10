@@ -1,4 +1,4 @@
-body { font-family: 'Montserrat', sans-serif !important; }
+body { font-family: 'Montserrat', sans-serif !important; font-family: Gotham !important; }
 .main-title h1 { font-size: 52px; font-family: 'Montserrat', sans-serif; color: #ffffff; font-weight: 600; }
 .main-title h2 { font-size: 28px; font-family: 'Montserrat', sans-serif; color: #222222; font-weight: 600; }
 .main-title h3 { font-size: 38px; font-family: 'Montserrat', sans-serif; color: #222222; }
@@ -41,6 +41,7 @@ background-repeat: no-repeat; background-size: cover; position: relative; }
 
 .backgound-img .for-splash-blue-logo img { width: 62vh;top: -40px;position: absolute; }
 .backgound-img .item-2 .for-blue-logo img { position: absolute; top: -80px; left: 0px; width: 60vh }
+.backgound-img .item-2 .content-text { position: fixed; bottom: 22px; width: 100%; }
 .backgound-img .item-2 .content-text h5 { color: #fff; font-size: 30px; font-family: Gotham; }
 .backgound-img .item-2 .content-text p { color: #fff;font-size: 16px; }
 .backgound-img .item-2 .content-text { padding: 40px 20px 0 20px; }
@@ -51,10 +52,44 @@ margin-top: -14px; font-weight: 600; }
 .backgound-img .owl-dots .owl-dot.active { opacity: 1; }
 .backgound-img .owl-dots .owl-dot.active span {  width: 35px; }
 
+.backgound-img .item div:nth-child(1) { height: 100vh; }
 /* Splash screen slider end */
 
 /* Login page start */
-.login-bg
+.login-bg { background-image: url('../images/login_bg.jpg'); height: 100vh; overflow: hidden; width: 100%; padding: 0; 
+background-repeat: no-repeat; background-size: cover; position: relative; padding: 30px 0; }
+
+
+.login-bg .main-login-box { margin: 0 25px; display: block; position: relative; width: 100%; }
+.login-bg .main-login-box .submit-btn { width: 100%; background-color: #43DDE6; padding: 15px 50px;
+font-size: 20px; font-family: Gotham; font-weight: 600; margin: 0 auto; display: block; border: none; }
+.login-bg .main-login-box .submit-btn a { color: #292930; }
+.login-bg .main-login-box h6 { color: #fff; text-align: center; text-transform: uppercase; font-size: 32px; 
+font-family: Gotham; display: block; padding-bottom: 50px; } 
+.login-bg .main-login-box h5 { font-size: 30px; color: #292930; }
+.login-bg .main-login-box p { color: #292930; font-size: 18px; font-weight: 400; font-family: Gotham; }
+.login-bg .white-main-box form input { border: 1.5px solid #8C8C97; border-radius: 5px; padding: 16px 20px; width: 100%; }
+.login-bg .white-main-box form input:focus { border: 1.5px solid #69A5FF; outline: none; }
+.login-bg .white-main-box form input::placeholder { color: #8B8B96; font-size: 18px; }
+.login-bg .white-main-box form label { color: #69A5FF; font-size: 15px; position: relative; bottom: -20px; left: 10px;
+background-color: #fff; padding: 0 10px; text-transform: capitalize; font-weight: 500; }
+.login-bg .white-main-box a.login-member { color: #FE5F55; font-size: 12px; text-align: right; display: block;margin: 5px 20px 0 0; }
+
+.login-bg .white-main-box { background-color: #fff; border-radius: 10px; padding: 18px 20px; 
+position: relative; z-index: 3; box-shadow: 5px -4px 10px rgba(0,0,0,0.1); margin-bottom: 30px; }
+/*.login-bg .white-main-box:after { position: absolute; content: ''; height: 100%; width: 100%; background-color: #fff;
+top: 20px; z-index: 2; left: 0; border-radius: 5px; }
+*/
+.login-bg .white-main-box img { text-align: center; margin: 0 auto; display: block; padding-top: 50px; }
+.login-bg .white-main-box.second,
+.login-bg .white-main-box.third { position: absolute; top: 76px; z-index: 2; width: 75%; left: 57%; transform: translate( -58% , 0 );} 
+.login-bg .white-main-box.third { z-index: 1; top: 58px; width: 60%; }
+
+.login-bg .login-verify p { margin-bottom: 0; }
+.login-bg .login-verify .number { color: #FE5F55; font-size: 18px; }
+.login-bg .login-verify .blank_circle { display: flex; opacity: 0.3; justify-content: center; margin: 40px 0; }
+.login-bg .login-verify .blank_circle span { height: 15px; width: 15px; background-color: #7B7B8B; border-radius: 30px;
+margin-right: 20px; }
 /* Login page end */
 }
 
